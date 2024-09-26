@@ -22,7 +22,6 @@ public class BaseTest {
 
     @BeforeTest
     public void setUp() throws MalformedURLException {
-        // Инициализация драйвера и страниц
         DesiredCapabilities cap = CapabilitiesLoader.loadCapabilities(Constants.CAPABILITIES_PATH);
         URL url = new URL(Constants.APPIUM_SERVER_URL);
         driver = new AppiumDriver(url, cap);
