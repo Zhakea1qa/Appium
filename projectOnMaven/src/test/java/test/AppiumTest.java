@@ -67,8 +67,10 @@ public class AppiumTest extends BaseTest {
         Assert.assertTrue(homeScreen.homeScreenDisplayed(),"home screen is not displayed");
         exploreScreen.clickExploreBtn();
         Assert.assertTrue(exploreScreen.explorePageDisplyed(),"post is not displayed state");
-        exploreScreen.scrollToPostFour();
-
+        exploreScreen.swipe(4);
+        Assert.assertTrue(exploreScreen.namePostDisplayed(), "4 posts is not displayed");
+        exploreScreen.swipeToFirstPost();
+        Assert.assertTrue(exploreScreen.namePostDisplayed(), "first post is not displayed");
     }
 }
  
