@@ -1,0 +1,8 @@
+{
+  "Android_Emulator": {
+    "capabilities": {
+      "platformVersion": "15.0",
+      "udid": "emulator-5554"
+    }
+  }
+}
