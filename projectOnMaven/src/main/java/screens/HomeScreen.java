@@ -5,13 +5,13 @@ import aquality.appium.mobile.screens.Screen;
 import org.openqa.selenium.By;
 
 public class HomeScreen extends Screen {
-    private final ILabel homeBtn = getElementFactory().getLabel(By.id("org.joinmastodon.android:id/empty_text"),"home button");
+    private final ILabel homeBtn = getElementFactory().getLabel(By.id("org.joinmastodon.android:id/empty_text"), "home button");
 
-    public HomeScreen(){
+    public HomeScreen() {
         super(By.xpath("//android.widget.TextView[@resource-id=\"org.joinmastodon.android:id/empty_text\"]"), "Home Screen");
     }
-    public boolean homeScreenDisplayed(){
 
+    public boolean homeScreenDisplayed() {
         return homeBtn.state().waitForDisplayed();
     }
 }
