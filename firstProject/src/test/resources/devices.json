@@ -1,8 +1,8 @@
 {
   "Android_Emulator": {
     "capabilities": {
-      "platformVersion": "15.0",
-      "udid": "emulator-5554"
+      "platformVersion": "14.0",
+      "udid": "RFCW91NCRKK"
     }
   }
 }

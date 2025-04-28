@@ -1,19 +1,21 @@
 package test;
+
 import aquality.appium.mobile.application.AqualityServices;
 import io.appium.java_client.AppiumDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import io.appium.java_client.MultiTouchAction;
+import org.testng.annotations.*;
 
 public class BaseTest {
     protected AppiumDriver driver;
-    @BeforeTest
+    @BeforeMethod
     public void setup() {
         driver = AqualityServices.getApplication().getDriver();
     }
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
+
     }
 }

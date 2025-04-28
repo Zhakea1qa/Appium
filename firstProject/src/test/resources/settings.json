@@ -43,9 +43,9 @@
   "touchActions": {
     "swipe": {
       "duration": 1,
-      "retries": 5,
+      "retries": 7,
       "verticalOffset": 0.2,
-      "horizontalOffset": 0.5
+      "horizontalOffset": 0.2
     }
   },
   "visualization": {
