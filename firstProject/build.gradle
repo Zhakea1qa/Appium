@@ -15,7 +15,7 @@ dependencies {
 
     testImplementation 'org.testng:testng:7.7.0'
     implementation group: 'com.github.aquality-automation', name: 'aquality-appium-mobile', version: '4.0.0'
-
+    testImplementation 'org.assertj:assertj-core:3.24.2'
 }
 
 test {
