@@ -19,6 +19,7 @@ dependencies {
     testImplementation 'io.cucumber:cucumber-java:7.16.1'
     testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.16.1'  // Для работы с JUnit Platform
 
+<<<<<<< HEAD
     // Aquality для Appium
     implementation 'com.github.aquality-automation:aquality-appium-mobile:4.0.0'
 
@@ -29,6 +30,10 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-cucumber7-jvm:2.24.0'
 
     // AssertJ для ассерт
+=======
+    testImplementation 'org.testng:testng:7.7.0'
+    implementation group: 'com.github.aquality-automation', name: 'aquality-appium-mobile', version: '4.0.0'
+>>>>>>> origin/Qualification
     testImplementation 'org.assertj:assertj-core:3.24.2'
 }
 
