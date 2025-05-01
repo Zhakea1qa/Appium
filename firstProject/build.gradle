@@ -10,14 +10,29 @@ repositories {
 }
 
 dependencies {
+    // JUnit для поддержки JUnit Platform
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.platform:junit-platform-suite:1.10.2'
 
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.9.0'
+    // Cucumber зависимости
+    testImplementation 'io.cucumber:cucumber-java:7.16.1'
+    testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.16.1'  // Для работы с JUnit Platform
 
-    testImplementation 'org.testng:testng:7.7.0'
-    implementation group: 'com.github.aquality-automation', name: 'aquality-appium-mobile', version: '4.0.0'
+    // Aquality для Appium
+    implementation 'com.github.aquality-automation:aquality-appium-mobile:4.0.0'
+
+    // Appium Java клиент
+    implementation 'io.appium:java-client:8.3.0'
+
+    // Allure для отчетности
+    testImplementation 'io.qameta.allure:allure-cucumber7-jvm:2.24.0'
+
+    // AssertJ для ассерт
     testImplementation 'org.assertj:assertj-core:3.24.2'
 }
 
 test {
-    useTestNG()
+    useJUnitPlatform()  // Запуск через JUnit Platform
+    systemProperty 'allure.results.directory', 'build/allure-results'  // Папка для Allure отчетов
 }
