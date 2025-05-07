@@ -1,0 +1,19 @@
+stages:
+  - test
+
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+  GRADLE_USER_HOME: "$CI_PROJECT_DIR/.gradle"
+
+test-job:
+  stage: test
+  image: gradle:8.1.1-jdk17
+  script:
+    - chmod +x ./gradlew
+    - ./gradlew clean test
+  artifacts:
+    paths:
+      - build/test-results
+      - build/reports
+      - build/allure-results
+    expire_in: 1 week
