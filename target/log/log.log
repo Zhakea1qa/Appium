@@ -7200,3 +7200,67 @@ Driver info: driver.version: unknown
 2025-05-07 14:22:45 DEBUG - -Dio.netty.recycler.batchFastThreadLocalOnly: true
 2025-05-07 14:22:51 DEBUG - brotli4j not in the classpath; Brotli support will be unavailable.
 2025-05-07 14:22:51 INFO  - Application on platform 'ANDROID' is ready...
+2025-05-07 14:55:47 INFO  - Setting application driver using the server on 'http://127.0.0.1:4723'
+2025-05-07 14:55:47 DEBUG - Using Log4J2 as the default logging framework
+2025-05-07 14:55:47 DEBUG - -Dio.netty.leakDetection.level: simple
+2025-05-07 14:55:47 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
+2025-05-07 14:55:47 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5d497a91
+2025-05-07 14:55:48 DEBUG - -Dio.netty.noUnsafe: false
+2025-05-07 14:55:48 DEBUG - Java version: 21
+2025-05-07 14:55:48 DEBUG - sun.misc.Unsafe.theUnsafe: available
+2025-05-07 14:55:48 DEBUG - sun.misc.Unsafe.copyMemory: available
+2025-05-07 14:55:48 DEBUG - sun.misc.Unsafe.storeFence: available
+2025-05-07 14:55:48 DEBUG - java.nio.Buffer.address: available
+2025-05-07 14:55:48 DEBUG - direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+2025-05-07 14:55:48 DEBUG - java.nio.Bits.unaligned: available, true
+2025-05-07 14:55:48 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @72cde7cc
+2025-05-07 14:55:48 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2025-05-07 14:55:48 DEBUG - sun.misc.Unsafe: available
+2025-05-07 14:55:48 DEBUG - maxDirectMemory: 536870912 bytes (maybe)
+2025-05-07 14:55:48 DEBUG - -Dio.netty.tmpdir: C:\Users\ZB332~1.KUT\AppData\Local\Temp (java.io.tmpdir)
+2025-05-07 14:55:48 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-05-07 14:55:48 DEBUG - Platform: Windows
+2025-05-07 14:55:48 DEBUG - -Dio.netty.maxDirectMemory: -1 bytes
+2025-05-07 14:55:48 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-05-07 14:55:48 DEBUG - java.nio.ByteBuffer.cleaner(): available
+2025-05-07 14:55:48 DEBUG - -Dio.netty.noPreferDirect: false
+2025-05-07 14:55:48 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
+2025-05-07 14:55:48 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-05-07 14:55:48 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2025-05-07 14:55:48 DEBUG - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2025-05-07 14:55:48 DEBUG - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2025-05-07 14:55:48 DEBUG - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-05-07 14:55:48 DEBUG - -Dio.netty.eventLoopThreads: 24
+2025-05-07 14:55:48 DEBUG - -Dio.netty.noKeySetOptimization: false
+2025-05-07 14:55:48 DEBUG - -Dio.netty.selectorAutoRebuildThreshold: 512
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.numHeapArenas: 21
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.numDirectArenas: 21
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.pageSize: 8192
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.maxOrder: 9
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.chunkSize: 4194304
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: false
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2025-05-07 14:55:48 DEBUG - -Dio.netty.allocator.type: pooled
+2025-05-07 14:55:48 DEBUG - -Dio.netty.threadLocalDirectBufferSize: 0
+2025-05-07 14:55:48 DEBUG - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2025-05-07 14:55:48 DEBUG - -Dio.netty.processId: 10928 (auto-detected)
+2025-05-07 14:55:48 DEBUG - -Djava.net.preferIPv4Stack: false
+2025-05-07 14:55:48 DEBUG - -Djava.net.preferIPv6Addresses: false
+2025-05-07 14:55:48 DEBUG - Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2025-05-07 14:55:48 DEBUG - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2025-05-07 14:55:48 DEBUG - -Dio.netty.machineId: 28:c5:c8:ff:fe:3b:a4:ec (auto-detected)
+2025-05-07 14:55:48 DEBUG - -Dio.netty.buffer.checkAccessible: true
+2025-05-07 14:55:48 DEBUG - -Dio.netty.buffer.checkBounds: true
+2025-05-07 14:55:48 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3185929
+2025-05-07 14:55:48 DEBUG - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2025-05-07 14:55:48 DEBUG - -Dio.netty.recycler.ratio: 8
+2025-05-07 14:55:48 DEBUG - -Dio.netty.recycler.chunkSize: 32
+2025-05-07 14:55:48 DEBUG - -Dio.netty.recycler.blocking: false
+2025-05-07 14:55:48 DEBUG - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2025-05-07 14:55:53 DEBUG - brotli4j not in the classpath; Brotli support will be unavailable.
+2025-05-07 14:55:53 INFO  - Application on platform 'ANDROID' is ready...
