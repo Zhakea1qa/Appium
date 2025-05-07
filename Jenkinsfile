@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        gradle 'Gradle_8'
-    }
-
     environment {
         ALLURE_RESULTS = 'build/allure-results'
     }
@@ -18,7 +14,7 @@ pipeline {
 
         stage('Build and Test') {
             steps {
-                echo 'Running tests on Windows...'
+                echo 'Running Gradle via gradlew.bat...'
                 bat 'gradlew.bat clean test'
             }
         }
