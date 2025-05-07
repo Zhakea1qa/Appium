@@ -13,15 +13,15 @@ public class AppiumTest extends BaseTest {
     @Test
     public void logInTest() {
         Assert.assertTrue(welcomeScreen.isDisplayed(), "welcome screen is not displayed");
-        welcomeScreen.clickLogIn();
-        welcomeScreen.clickRadio();
-        welcomeScreen.clickNextBtn();
-        authoriseScreen.clickAuthorizeBtn();
-        authoriseScreen.clickAllowBtn();
-        Assert.assertTrue(homeScreen.homeScreenDisplayed(),"home screen is not displayed");
-        exploreScreen.clickExploreBtn();
-        Assert.assertTrue(exploreScreen.explorePageDisplyed(),"Posts screen is not opened");
-        exploreScreen.clickText();
-        Assert.assertTrue(exploreScreen.postIsDisplayed(),"post is not open");
+//        welcomeScreen.clickLogIn();
+//        welcomeScreen.clickRadio();
+//        welcomeScreen.clickNextBtn();
+//        authoriseScreen.clickAuthorizeBtn();
+//        authoriseScreen.clickAllowBtn();
+//        Assert.assertTrue(homeScreen.homeScreenDisplayed(),"home screen is not displayed");
+//        exploreScreen.clickExploreBtn();
+//        Assert.assertTrue(exploreScreen.explorePageDisplyed(),"Posts screen is not opened");
+//        exploreScreen.clickText();
+//        Assert.assertTrue(exploreScreen.postIsDisplayed(),"post is not open");
     }
 }

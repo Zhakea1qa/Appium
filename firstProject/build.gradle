@@ -15,9 +15,10 @@ dependencies {
 
     testImplementation 'org.testng:testng:7.7.0'
     implementation group: 'com.github.aquality-automation', name: 'aquality-appium-mobile', version: '4.0.0'
-
+    testImplementation 'io.qameta.allure:allure-testng:2.24.0'
 }
 
 test {
     useTestNG()
+    systemProperty "allure.results.directory", "build/allure-results"
 }
