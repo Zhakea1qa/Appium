@@ -18,7 +18,9 @@ out/
 *.gradle
 *.idea
 build
-gradle
+gradle/*
+!gradle/wrapper/
+!gradle/wrapper/gradle-wrapper.jar
 ### Eclipse ###
 .apt_generated
 .classpath
