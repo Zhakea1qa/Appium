@@ -10,8 +10,9 @@ test-job:
   image: gradle:8.1.1-jdk17
   script:
     - chmod +x ./gradlew
-    - ./gradlew clean test
+    - ./gradlew clean test --stacktrace
   artifacts:
+    when: always
     paths:
       - build/test-results
       - build/reports
