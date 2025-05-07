@@ -12,13 +12,20 @@ pipeline {
             }
         }
 
-        stage('Build and Test') {
-            steps {
-                echo 'Running Gradle via gradlew.bat...'
-                bat 'gradlew.bat clean test'
-            }
-        }
+//         stage('Build and Test') {
+//             steps {
+//                 echo 'Running Gradle via gradlew.bat...'
+//                 bat 'gradlew.bat clean test'
+//             }
+//         }
 
+        stage('Create  new file'){
+        steps{
+                            script {
+                                 writeFile file: 'hello.txt', text: 'Hello from Jenkins!'
+                            }
+        }
+        }
         stage('Allure Report') {
             steps {
                 allure includeProperties: false,
@@ -31,6 +38,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: '**/build/allure-results/**/*', fingerprint: true
+            archiveArtifacts artifacts: 'hello.txt', fingerprint: true
         }
 
         failure {
